@@ -1,0 +1,47 @@
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  background-color: #1F2124;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+}
+
+#container {
+  background: transparent !important;
+}
+
+#container canvas[data-pixel-art="true"] {
+  image-rendering: optimizeSpeed;
+  image-rendering: -webkit-crisp-edges;
+  image-rendering: -moz-crisp-edges;
+  image-rendering: -o-crisp-edges;
+  image-rendering: crisp-edges;
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: optimize-contrast;
+  image-rendering: pixelated;
+  -ms-interpolation-mode: nearest-neighbor;
+}
+
+#fullscreen-toggle {
+  position: absolute;
+  display: inline;
+  width: 4em;
+  height: 4em;
+  bottom: 1em;
+  left: 1em;
+  border-radius: 50%;
+  border: none;
+  z-index: 50;
+  color: #fefefe !important;
+  background-color: #292c30;
+}
+
+#fullscreen-toggle:hover { background-color: #33363b; }
+#fullscreen-toggle:active { background-color: #3c4046; }
+
