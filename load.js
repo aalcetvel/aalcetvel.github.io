@@ -1,5 +1,5 @@
 
-const canvas = document.querySelector('#unity-canvas');
+var canvas = document.querySelector('#unity-canvas');
 const fullscreenToggle = document.querySelector('#fullscreen-toggle');
 
 const config = {
@@ -42,8 +42,6 @@ const onResize = () => {
 
   container.style.width = canvas.style.width = w + 'px';
   container.style.height = canvas.style.height = h + 'px';
-  container.style.top = Math.floor((window.innerHeight - h) / 2) + 'px';
-  container.style.left = Math.floor((window.innerWidth - w) / 2) + 'px';
 
   fullscreenToggle.style.width = (w / 25) + 'px';
   fullscreenToggle.style.height = (w / 25) + 'px';
